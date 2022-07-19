@@ -1,0 +1,135 @@
+.footer {
+    padding-top: 30px;
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__line {
+        height: 2px;
+        margin-bottom: 30px;
+        background: $color-e6e6f0;
+    }
+    &__address {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 21px;
+        a {
+            font-size: 12px;
+            line-height: 15px;
+            letter-spacing: 1px;
+            color: $text-blue;
+        }
+    }
+    &__street {
+        margin-bottom: 10px;
+        color: $color-323264;
+    }
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__fb {
+        path {
+            fill: $text-blue;
+            transition: 0.5s;
+            &:hover {
+                fill: $hover-red-color;
+            }
+        }
+    }
+    &__tel {
+        margin: 8px auto;
+        color: $color-46466e;
+    }
+    &__mail {
+        color: $text-blue;
+        &:hover {
+            color: $hover-red-color;
+        }
+    }
+    &__rights {
+        margin: 30px 0;
+        color: $color-b3b3ba;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .footer {
+        &__wrap {
+            flex-direction: row;
+            flex-wrap: wrap;
+            &--about {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        &__address,
+        &__contacts {
+            flex-direction: row;
+        }
+        &__address {
+            margin-bottom: 0;
+            &--about {
+                margin-left: -120px;
+            }
+        }
+        &__contacts {
+            order: 1;
+            width: 100%;
+            margin: 19px 0 30px;
+            &--about {
+                order: 0;
+                justify-content: center;
+            }
+        }
+        &__street {
+            margin: 0;
+        }
+        &__street::after,
+        &__fb::after {
+            content: url(../img/separator.svg);
+            padding: 0 10px;
+            position: relative;
+            top: -2px; 
+        }
+        &__fb::after {
+            top: -13px;
+            padding: 0 6px;
+        }
+        &__tel {
+            margin: 0 6px;
+        }
+        &__rights {
+            margin: 0 0 0 auto;
+            display: flex;
+            justify-content: flex-end;
+            &--about {
+                margin: 0;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .footer {
+        &__wrap--about {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        &__address--about {
+            margin-left: 0;
+        }
+        &__contacts--about {
+            order: 1;
+            justify-content: flex-start;
+        }
+        &__rights--about {
+            margin: 0 0 0 auto;
+        }
+    }
+}

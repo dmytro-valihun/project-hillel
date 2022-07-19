@@ -1,0 +1,55 @@
+.header {
+    &__top--about-pg {
+        background: $color-bg-f5f5fa;
+    }
+    &__tel--about-pg {
+        color: $color-b3b3ba;
+    }
+    &__lang--about-pg {
+        a {
+            color: $color-b3b3ba;
+            &:hover {
+                background: $color-bg-f5f5fa;
+                border-radius: $br-radius-8px;
+            }
+        }   
+    }
+    &__breadcrumbs {
+        font-size: 20px;
+        line-height: 24px;
+        color: $color-323264;
+    }
+    &__logo--flex {
+        display: flex;
+    }
+    &__slash {
+        margin: 0 4px;
+    }
+    &__active-lang-white {
+        background: $hover-red-color;
+        border-radius: $br-radius-8px;
+        span {
+            color: $text-white; 
+        }
+    }
+}
+
+@media screen and (min-width:768px) {
+    .header {
+        &__top--about-pg {
+            background: none;
+        }
+        &__address--about-pg {
+            color: $color-b3b3ba;
+        }
+        &__slash svg {
+            width: 21px;
+            height: 47px;
+        }
+        &__breadcrumbs {
+            font-size: 36px;
+            line-height: 44px;
+            min-width: 200px;
+        }
+    }
+}

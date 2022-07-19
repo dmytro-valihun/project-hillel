@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.body {
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    min-width: 375px;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+    color: $text-white; 
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 0 60px;
+    }
+}

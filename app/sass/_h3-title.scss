@@ -1,0 +1,18 @@
+.h3-title {
+    background: $title-sect-3-grad;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    line-height: 37px;
+    &--about {
+        font-size: 36px;
+        line-height: 44px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .h3-title {
+        font-size: 38px;
+        line-height: 46px;
+    } 
+}

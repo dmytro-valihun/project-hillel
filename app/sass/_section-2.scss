@@ -1,0 +1,109 @@
+.section-2 {
+    &__wrap-for-sect2 {
+        padding: 30px 0;
+    }
+    &__main-wrap {
+        margin-right: -30px;
+    }
+    &__buttons {
+        display: flex;
+        overflow: auto;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        & button {
+            white-space: nowrap;
+            margin-right: 30px;
+            border: none;
+            color: $color-b3b3ba;
+            background: transparent;
+            font-family: "Montserrat", "Arial", sans-serif;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 37px;
+            padding: 0;
+            &:hover {
+                cursor: pointer;
+                background: $active-menu-below; 
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+    .section-2__btn-active {
+        background: $active-menu-below; 
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    &__line {
+        margin: 30px 0;
+        border: 2px solid $color-sect-2-line;
+    }
+    &__descript {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .section-2 {
+        &__wrap-for-sect2 {
+            padding: 60px 0;
+        }
+        &__buttons {
+            margin-right: -30px;
+            button {
+                font-size: 38px;
+                line-height: 46px;
+                color: $color-b3b3ba;
+            }
+        }
+        &__line {
+            margin: 60px 0;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .section-2 {
+        &__wrap-for-sect2 {
+            display: flex;
+            padding: 60px 0;
+        }
+        &__main-wrap {
+            display: flex;
+            margin-right: 0;
+            min-height: 304px;
+            padding: 15px 0;
+        }
+        &__buttons {
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: space-between;
+            margin-left: 0;
+            margin-right: 0;
+            button {
+                margin: 0;
+            }
+        }
+        &__line {
+            margin: 0 60px;
+            transform: rotate(180deg);
+        }
+        &__descript {
+            padding: 10px 0;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .section-2 {
+        &__wrap-for-sect2 {
+            padding: 60px 120px;
+        }
+        &__descript {
+            padding: 43px 0;
+        }
+    }
+}

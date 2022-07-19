@@ -1,0 +1,17 @@
+.blue-a {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    color: $text-blue;
+    span {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: -3px;
+    }
+    &:hover {
+        color: $text-blue-hover;
+        path {
+            stroke: $text-blue-hover;
+        }
+    }
+}

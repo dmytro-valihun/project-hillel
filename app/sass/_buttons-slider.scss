@@ -1,0 +1,22 @@
+.slider-wrap {
+    display: flex;
+    justify-content: center;
+    button {
+        width: 16px;
+        height: 16px;
+        background: $text-blue;
+        opacity: 0.2;
+        border-radius: 50%;
+        border: none;
+        margin: 0 7px;
+        &:hover {
+            background: $text-blue-hover;
+            opacity: 1;
+            cursor: pointer;
+        }
+    }
+    .slider-wrap__active-slider {
+        background: $color-006ccf;
+        opacity: 1;
+    }
+}

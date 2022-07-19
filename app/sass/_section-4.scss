@@ -1,0 +1,77 @@
+.section-4 {
+    padding: 20px 0 60px;
+    &__wrap {
+        margin: 30px 0;
+        background: $color-bg-f5f5fa;
+        overflow: hidden;
+        border-radius: 12px;
+    }
+    &__foto {
+        display: block;
+        height: 500px;
+        width: 100%;
+        object-fit: cover;
+    }
+    &__team-bio {
+        padding: 30px;
+        word-wrap: break-word;
+    }
+    &__card-inside h3 {
+        margin-top: 2px;
+    }
+    &__employees-name {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        margin: 30px 0 6px;
+        color: $color-b3b3ba;
+    }
+    &__employees-post {
+        color: $color-b3b3ba;
+    }
+}
+
+@media screen and  (min-width: 768px) {
+    .section-4 {
+        &__wrap {
+            margin-top: 60px;
+        }
+        &__card-inside {
+            h3 {
+                font-size: 38px;
+                line-height: 46px;
+            }
+        }
+    }
+}
+
+@media screen and  (min-width: 1024px) {
+    .section-4 {
+        &__wrap {
+            display: flex;
+        }
+        &__wrap-foto {
+            width: 44%;
+        }
+        &__foto {
+            height: 528px;
+        }
+        &__team-bio {
+            width: 56%;
+        }
+    }
+}
+
+@media screen and  (min-width: 1440px) {
+    .section-4 {
+        &__wrap-foto {
+            width: 30.333%;
+        }
+        &__team-bio {
+            width: 69.666%;
+        }
+        &__foto {
+            height: 344px;
+        }
+    }
+}

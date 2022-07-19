@@ -1,0 +1,12 @@
+.h2-title {
+    font-size: 20px;
+    line-height: 24px;
+    color: $text-white;
+}
+
+@media screen and (min-width: 768px) {
+    .h2-title {
+        font-size: 30px;
+        line-height: 37px;
+    }   
+}

@@ -1,0 +1,11 @@
+.p-text {
+    font-size: 19px;
+    line-height: 30px;
+    color: $text-white;
+    &--black {
+        color: $color-logo-12;
+    }
+    &--sect2 {
+        margin-top: 30px;
+    }
+}

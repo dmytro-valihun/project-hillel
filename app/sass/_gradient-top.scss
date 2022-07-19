@@ -1,0 +1,47 @@
+.gradient-top {
+    background: $color-bg-main-page;
+    position: relative;
+    border-radius: $br-radius-12px;
+    &::before {
+        content: "";
+        position: absolute;
+        height: 10px;
+        bottom: -10px;
+        left: 20px;
+        right: 20px;
+        background: $color-cacadb;
+        border-radius: $br-radius-12px;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        height: 10px;
+        bottom: -20px;
+        left: 40px;
+        right: 40px;
+        background: $color-e7e7f2;
+        border-radius: $br-radius-12px;
+    }
+    &__background-h {
+        background: url(../img/bg-big-h.svg) no-repeat top center;
+        background-size: 530px 600px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .gradient-top__background-h {
+        background-size: 893px 1024px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .gradient-top__background-h {
+        background-size: 670px 768px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .gradient-top__background-h {
+        background-size: 697px 800px;
+    }
+}

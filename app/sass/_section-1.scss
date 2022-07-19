@@ -1,0 +1,52 @@
+.section-1 {
+    margin: 0 -30px;
+    position: relative;
+    &__h1-title {
+        padding-top: 121px;
+        padding-bottom: 231px;
+        width: 315px;
+        margin: 0 auto;
+    }
+    &__scroll {
+        position: absolute;
+        font-size: 0;
+        bottom: 10px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        &:hover {
+            .section-1__path, 
+            .section-1__circle {
+                transition: 0.5s linear;
+                stroke: $hover-red-color;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .section-1 {
+        &__h1-title {
+            padding-top: 269px;
+            padding-bottom: 489px;
+            width: 708px;
+        }    
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .section-1 {
+        &__h1-title {
+            padding-top: 246px;
+            padding-bottom: 360px;
+        }    
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .section-1 {
+        &__h1-title {
+            padding-top: 262px;
+            padding-bottom: 376px;
+        }    
+    }
+}
