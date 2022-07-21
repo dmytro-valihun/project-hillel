@@ -46,6 +46,10 @@
                 border-bottom: 2px solid $text-blue;
             }
         }
+        &__list--services-pg a {
+            padding-bottom: 3px;
+            transition: 0.3s;
+        }
         li .menu-nav__is-active {
             color: $hover-red-color;
             border-bottom: 2px solid $hover-red-color;

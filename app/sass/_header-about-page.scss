@@ -14,13 +14,16 @@
             }
         }   
     }
+    &__logo--flex {
+        display: flex;
+    }
     &__breadcrumbs {
         font-size: 20px;
         line-height: 24px;
         color: $color-323264;
-    }
-    &__logo--flex {
-        display: flex;
+        &--services {
+            color: $text-white;
+        }
     }
     &__slash {
         margin: 0 4px;

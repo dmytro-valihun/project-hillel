@@ -7,6 +7,9 @@
         text-align: center ;
         margin-bottom: 30px;
         color: $color-323264;
+        &--mg-top {
+            margin-top: 80px;
+        }
     }
     &__items {
         display: flex;

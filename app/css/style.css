@@ -240,6 +240,11 @@
   .menu-nav__list--about-pg a:hover {
     border-bottom: 2px solid #24A3FF;
   }
+  .menu-nav__list--services-pg a {
+    padding-bottom: 3px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
   .menu-nav li .menu-nav__is-active {
     color: #F0145A;
     border-bottom: 2px solid #F0145A;
@@ -553,6 +558,10 @@ a {
   }
 }
 
+.section-3--services {
+  margin-top: 20px;
+}
+
 .section-3__title {
   padding-bottom: 30px;
 }
@@ -590,7 +599,7 @@ a {
 }
 
 .section-3__card-in a:hover {
-  color: #0085FF;
+  color: #F0145A;
 }
 
 .section-3__card-in p {
@@ -605,6 +614,9 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .section-3--services {
+    margin-top: 60px;
+  }
   .section-3__title {
     padding-bottom: 60px;
   }
@@ -751,6 +763,10 @@ a {
   text-align: center;
   margin-bottom: 30px;
   color: #323264;
+}
+
+.section-5__h3--mg-top {
+  margin-top: 80px;
 }
 
 .section-5__items {
@@ -1180,16 +1196,20 @@ a {
   border-radius: 8px;
 }
 
+.header__logo--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .header__breadcrumbs {
   font-size: 20px;
   line-height: 24px;
   color: #323264;
 }
 
-.header__logo--flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.header__breadcrumbs--services {
+  color: #FFFFFF;
 }
 
 .header__slash {
