@@ -1,0 +1,118 @@
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $color-323264;
+    &__window {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: $color-bg-f5f5fa;
+    }
+    &__window-inside {
+        padding: 30px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    &__question {
+        position: relative;
+    }
+    &__h3 {
+        width: calc(100% - 40px);
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    &__input {
+        width: 100%;
+        padding: 15px;
+        border-radius: $br-radius-8px;
+        font-family: 'Montserrat', 'Arial', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        border: none;
+        font-size: 16px;
+        line-height: 26px;
+        &::placeholder {
+            color: $color-b3b3ba;
+            opacity: 1;
+        }
+    }
+    &__name {
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+    &__message {
+        margin-bottom: 30px;
+        padding: 15px;
+        border-radius: $br-radius-8px;
+        height: 130px;
+        resize: none;
+    }
+    &__answer {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        letter-spacing: 1px;
+        color: $color-b3b3ba;
+    }
+    &__tel {
+        margin: 15px 0;
+    }
+    &__btn {
+        margin-top: auto;
+    }
+    &__btn {
+        font-weight: 700;
+        color: $text-white;
+        cursor: pointer;
+        padding: 18px 30px;
+        background: $text-blue;
+        box-shadow: $btn-shadow;
+        border: none;
+        border-radius: 12px;
+        &:hover {
+            background: $text-blue-hover;
+        }
+        &:active {
+            background: $title-sect-3-grad;
+        }
+    }
+    .popup__close {
+        position: absolute;
+        padding: 0;
+        font-size: 0;
+        top: 0;
+        right: 0;
+        border: none;
+        background: inherit;
+        cursor: pointer;
+        &:hover {
+            background: $color-e6e6f0;
+            border-radius: $br-radius-8px;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .popup {
+        &__window {
+            width: 64%;
+            height: auto;
+            box-shadow: $popup-shadow;
+            border-radius: 12px; 
+        }
+        &__btn {
+            margin-top: 30px;
+        }
+    }
+}

@@ -102,14 +102,14 @@
                 </section>
                 <section class="section-3">
                     <div class="section-3__title">
-                        <a id="anchor-servises" class="big-text blue-a" href="#">Services
+                        <a id="anchor-servises" class="big-text blue-a" href="#popup-contact">Services
                             <span>
                                 <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M3.5 2L8 6.5L3.5 11" stroke="#24A3FF" stroke-width="2"/>
                                 </svg>
                             </span>
                         </a>
-                        <h3 class="h3-title ">What can we do better than others?</h3>
+                        <h3 class="h3-title">What can we do better than others?</h3>
                     </div>
                     <div class="section-3__wrap-cards">
                             <div class="section-3__card-in">
@@ -423,5 +423,28 @@
             </div>
         </div>
     </footer>
+    <div class="popup" id="popup-contact">
+        <div class="popup__window">
+            <div class="popup__window-inside">
+                <div class="popup__question">
+                    <h3 class="h3-title popup__h3">We would like to help you</h3>
+                    <button class="popup__close" type="button">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 7L25 25" stroke="#EC6F5D" stroke-width="2"/>
+                            <path d="M25 7L7 25" stroke="#EC6F5D" stroke-width="2"/>
+                        </svg>
+                    </button>
+                </div>
+                <form class="popup__form" method="post" action="#">
+                    <p class="popup__name"><input class="popup__input" type="text" name="user-name" required placeholder="Name"></p>
+                    <textarea class="popup__message popup__input" name="user-message" required placeholder="Message"></textarea>
+                    <p class="big-text popup__answer">How to answer you?</p>
+                    <p class="popup__tel"><input class="popup__input" name="user-phone" type="tel" required placeholder="Phone number"></p>
+                    <p class="popup__email"><input class="popup__input" name="user-email" type="email" required placeholder="Email"></p>
+                    <button class="p-fs16-lh20 popup__btn" type="submit">Send message</button>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
