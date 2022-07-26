@@ -9,3 +9,16 @@
         margin-top: 30px;
     }
 }
+
+.p-fs14-lh22 {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.p-fs16-lh20 {
+    font-size: 16px;
+    line-height: 20px;
+    &--about {
+        color: $color-323264;
+    }
+}
